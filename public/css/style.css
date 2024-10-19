@@ -1,0 +1,369 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black; 
+    color: #ffffff; 
+    margin: 0;
+    padding-top: 60;
+}
+header {
+    background-color: #1e1e1e; 
+    padding: 10px 20px; 
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    z-index: 1000; 
+}
+
+nav {
+    margin: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 50px; /* Add space between each nav item */
+}
+
+nav ul li a {
+    color: #ffffff; /* Light text color for links */
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4109dd;; /* Hover color */
+}
+
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1e1e1e; /* Dark background for dropdown */
+    min-width: 200px;
+    z-index: 1;
+}
+
+nav ul li .dropdown-content a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li .dropdown-content a:hover {
+    background-color: #4109dd; /* Hover color for dropdown */
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    margin: 20px;
+}
+
+h2, h3 {
+    color: #ffffff; /* Light color for headings */
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1e1e1e; /* Dark footer */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}/* Background image section */
+
+
+
+/* CSS for background image */
+.background-image {
+    background-image: url('../images/portfolio-bg.jpg'); /* Update with your image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox to align content */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    position: relative; /* For layering content */
+}
+
+/* Overlay Content */
+.overlay-content {
+    color: white; /* Text color for contrast */
+    text-align: center; /* Center align text */
+    z-index: 1; /* Ensure content appears above the background */
+}
+
+/* Optional: Dark Overlay */
+
+
+.overlay-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.overlay-content p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Content section below the image */
+.home-content {
+    padding: 100px;
+    text-align: center;
+}
+
+.home-content p {
+    font-size: 1.1rem;
+    color: black;
+}
+.about-bg {
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.about-bg .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+}
+
+.about-bg h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+    margin-bottom: 10px;
+}
+
+.about-bg p {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    margin-top: 0;
+}
+
+/* Additional content sections styles */
+.about-content {
+    padding: 40px;
+    background-color: black; /* Semi-transparent background */
+    border-radius: 1px; /* Rounded corners (optional) */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
+.about-content .container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.about-content .section {
+    margin-bottom: 40px;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: whitesmoke;
+    line-height: 1.8;
+}
+
+/*laboratory*/
+/* Background image styling for the entire laboratory view */
+.bg-lab-image {
+    background-image: url('../images/portfolio-bg.jpg'); /* Replace with your actual image path */
+    background-size: cover;
+    background-position: center;
+    position: fixed; /* Change to fixed to keep it in view */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Makes the background cover the whole page */
+    z-index: -1; /* Keeps the background behind content */
+}
+
+/* Ensure the content stays on top of the background */
+.lab-container {
+    position: relative; /* Allows it to stack on top of the background */
+    padding: 100px 30px 70px; 
+    border-radius: 8px;
+    max-width: 1200px;
+    margin: 50px auto;   
+    z-index: 1; /* Ensure the container content appears above the background */
+}
+
+.lab-container h1 {
+    text-align: center;
+}
+
+
+.lab-container h1, .lab-container h2 {
+    color: white; /* Ensure visibility against the background */
+  
+}
+
+.lab-container pre {
+    background-color: black;
+    padding: 15px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+.lab-container ul {
+    padding-left: 20px;
+}
+
+.lab-container img {
+    display: block; /* Ensures that the image behaves like a block element */
+    margin: 10px auto; /* Centers the image and adds top and bottom margin */
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
+}
+
+.lab-container .github-link .btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.lab-container .github-link .btn:hover {
+    background-color: #218838;
+}
+
+.lab-container .reflection {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Transparent background for the reflection section */
+    border-radius: 6px;
+}
+
+.reflection h2, 
+.reflection p {
+    color: black; /* Change to your desired color */
+}
+/* Background Image Section */
+.contact-background {
+    background-image: url('../images/portfolio-bg.jpg');  /* Set your background image */
+    height: 100vh; /* Full height of the viewport */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative; /* Position relative for child elements */
+}
+
+/* Contact Container */
+.contact-container {
+    background-color: rgba(17, 16, 16, 0.8); /* White background with slight transparency */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Padding inside the container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    max-width: 600px; /* Max width for the form container */
+    width: 100%; /* Full width */
+    z-index: 1; /* Ensure it appears above the background */
+}
+
+/* Heading Styles */
+.contact-container h1,
+.contact-container h2 {
+    text-align: center; /* Center text */
+    color: whitesmoke; /* Dark text color */
+}
+
+/* Paragraph Styles */
+.contact-container p {
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold; /* Make labels bold */
+}
+
+/* Input Fields */
+.form-control {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Space inside the fields */
+    border: 1px solid #141414; /* Border for input fields */
+    border-radius: 4px; /* Rounded corners for input fields */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Submit Button */
+.btn {
+    background-color: #007bff; /* Primary button color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Space inside button */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for button */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    display: block; /* Make button a block element */
+    min-width: 100px; 
+    max-width: 300px; 
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
